@@ -1,0 +1,15 @@
+[package]
+name = "rpc-example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+rpc = { git = "https://github.com/nurmohammed840/frpc" }
+frpc = { git = "https://github.com/nurmohammed840/frpc" }
+frpc-codegen-client = { git = "https://github.com/nurmohammed840/frpc" }
+
+[dev-dependencies]
+
+[profile.dev.package."frpc-codegen-client"]
+opt-level = 3
